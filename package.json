@@ -4,7 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint --ext .js,.jsx ./",
+    "lint:fix": "eslint --ext .js,.jsx ./ --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"   
   },
   "repository": {
     "type": "git",
